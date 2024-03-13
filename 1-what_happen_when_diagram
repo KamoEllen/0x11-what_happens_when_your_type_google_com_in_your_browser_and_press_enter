@@ -12,3 +12,16 @@ that the application server generates the web page
 that the application server request data from the database
 
 Gliffy was used
+
+Explanation:
+The browser makes a DNS query to resolve "google.com" to an IP address.
+The DNS resolver sends the query to a DNS server, which responds with the IP address of Google's server.
+The browser sends an HTTP request to the server's IP address on the appropriate port (typically port 80 for HTTP or port 443 for HTTPS).
+The request passes through a firewall for security.
+The request is then distributed to a server in Google's server farm via a load balancer to ensure even distribution of traffic.
+The web server receives the request and serves a web page.
+The web server may request data from an application server.
+The application server generates the web page content, which may involve querying a database for data.
+The application server sends the generated web page back to the web server.
+The web server sends the web page back to the browser.
+The browser renders the web page for the user to see.
